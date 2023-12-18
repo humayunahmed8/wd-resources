@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
+
+    <style>
+      body {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <!-- <header class="header-area">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="logo"  width="30" height="24">
+              Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex ms-3">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+              <button class="ms-3 btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                Icon
+              </button>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <nav aria-label="...">
+          <ul class="pagination  pagination-sm">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+              <span class="page-link">2</span>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover"  data-bs-placement="top" data-bs-trigger="focus" title="Popover title" data-bs-content="Hello world!">Button</a>
+    </div>
+
+    <div class="container pt-5">
+      <div class="progress mb-2" style="height: 5px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-info  progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-warning progress-bar-striped " role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid">
+      <nav id="navbar-example2" class="navbar navbar-light sticky-sm-top bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ipsa aspernatur, laborum iste, commodi sapiente officia vitae placeat fugit accusantium voluptates nisi sunt fuga ducimus provident nostrum doloremque quaerat doloribus dolor eos maxime deserunt! Vitae voluptatibus amet nisi sapiente quasi accusantium perspiciatis aperiam voluptates eius laudantium distinctio temporibus minima, explicabo perferendis id cupiditate libero reiciendis quidem ullam praesentium repellat qui voluptatum rem consequuntur! Repellendus eius natus eos obcaecati ex commodi animi ratione rem maxime quasi facere incidunt eveniet in sapiente laborum, iusto, ipsa itaque esse laudantium tempore quas ad. Doloremque iusto dicta omnis reiciendis atque quidem, provident pariatur! Vero.</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odit facilis neque debitis provident dolor voluptatum nisi similique cupiditate perspiciatis eaque! Numquam reprehenderit reiciendis eligendi velit impedit in quidem nesciunt laudantium? Laboriosam reiciendis pariatur, neque numquam reprehenderit porro tempore aspernatur eius assumenda ipsa. Perspiciatis illo veritatis odio, et qui impedit voluptatibus in accusamus labore blanditiis placeat enim autem repellat aliquid voluptates atque excepturi, nam eligendi asperiores suscipit, soluta itaque iusto debitis nostrum. Temporibus provident, dolor quibusdam pariatur at nam voluptates ipsa molestiae modi dolore est saepe odit suscipit quos, maiores corrupti ducimus debitis tenetur iste ullam beatae tempora? Odit, a mollitia debitis vero pariatur optio laborum, repellendus earum, sint similique perferendis ad alias aspernatur adipisci rem magnam ratione quam ut culpa sequi quos corrupti sunt. Laboriosam fuga totam possimus ipsum maiores ad aut nemo ratione recusandae, optio vitae nihil, velit, corporis expedita nesciunt unde corrupti at saepe dolores eveniet iste atque iure placeat! Sit temporibus quis reprehenderit pariatur, laborum ea ipsum dolores, tempora corporis vel praesentium excepturi rem assumenda repudiandae nihil saepe itaque doloribus fuga aperiam, facilis eligendi? Odio magni ipsum tempora. Enim veritatis iste ducimus quisquam ex! Veniam, aspernatur? Sed, ut fuga? Animi facilis rem iusto repellendus, explicabo ad.</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse libero autem asperiores maiores impedit nostrum reprehenderit minus ipsum dolorem, eius deleniti accusantium aperiam consequuntur eligendi provident repudiandae excepturi id alias molestias, ipsa quibusdam veritatis, quidem iste. Repellendus, dignissimos. Quas quam nulla non dolorem debitis, dicta nihil doloremque autem mollitia modi illo cum aperiam magni aliquid velit, sunt accusamus dolor qui tempore? Facilis illum at accusamus distinctio sapiente sequi possimus eligendi ut similique molestias, a perspiciatis magni adipisci doloremque sint eaque! Voluptatum officiis cupiditate consequuntur, dolorum voluptates blanditiis enim, molestias porro explicabo corporis animi voluptatibus ipsum recusandae fugiat, rerum natus autem. Voluptates labore corporis perspiciatis autem reiciendis commodi laudantium dolor voluptatibus amet asperiores, ipsa id dolore maxime ullam officia quisquam deserunt, error vitae officiis eveniet? Id corrupti, ea ipsum dolor quas expedita. Placeat distinctio numquam aspernatur et eum accusamus deleniti obcaecati quod sint ullam quia cupiditate totam facilis, laboriosam alias ipsam hic nesciunt modi. Inventore ea pariatur totam natus enim cupiditate laborum accusantium animi eum itaque! Modi nesciunt non consequuntur exercitationem, aut temporibus et ex! Fuga commodi dolorem eveniet tempore quibusdam tenetur, cum beatae sapiente maxime magni. Veniam libero minima animi reprehenderit hic, laborum voluptate neque. Delectus fugiat sint laudantium cum facilis consectetur alias ut, repellat iste hic voluptate quos quidem aspernatur magni placeat voluptas incidunt odit excepturi ratione labore perspiciatis enim quam. Est, labore cupiditate cumque mollitia sint sunt impedit, aspernatur fugiat ea eveniet ipsam. Nihil, quasi. Exercitationem ea asperiores expedita laudantium a quis commodi, magnam mollitia, voluptatibus modi dolorem dicta aliquam odio pariatur dolores! Omnis sunt voluptatibus laudantium corporis totam? Error quaerat nostrum quis corporis fugit non neque eum minima esse, voluptas porro delectus? Aliquam sapiente distinctio repellat aliquid corrupti enim tempora vero doloremque aut necessitatibus magni dicta sequi, eveniet natus labore non sunt sed neque cupiditate reiciendis molestias?</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aspernatur sit non eaque minima suscipit debitis voluptatibus quis. Id quisquam magnam vitae dolorum ipsam aliquid in accusantium esse totam! Dolorum eos voluptatem nemo ab, rem nobis tenetur quos sint minima, obcaecati aliquid adipisci praesentium iure sit cupiditate sed corrupti libero autem possimus magni quidem veritatis voluptate numquam cumque. Esse neque quisquam consectetur illum doloremque perferendis fugiat veritatis distinctio at expedita? Explicabo facere non iure? Dignissimos placeat iure, error velit et eius sed corporis qui explicabo iste consequatur, accusantium eveniet veritatis aliquid blanditiis autem exercitationem odit? Architecto voluptatem, dignissimos deleniti labore repellat enim recusandae assumenda voluptatum iusto officiis placeat corporis non laudantium harum id dolores voluptas expedita voluptatibus quidem! Natus quos tenetur illum ipsum laudantium aliquam asperiores optio unde molestiae quo porro sequi a, alias libero quis officia tempora consectetur excepturi vitae omnis nisi ex, nihil similique non! Omnis quae cupiditate nostrum impedit nesciunt ipsa, minima, assumenda earum iure fugiat iste fuga id qui tenetur expedita reprehenderit officia. Nulla, quisquam ullam. Nobis eveniet dicta rem culpa molestias fugiat corrupti, officia voluptatum recusandae voluptate placeat, soluta maxime deleniti odio amet provident laborum a. Similique nam quos enim earum veritatis incidunt quae voluptatem laborum quia, ipsum vero atque officiis, expedita delectus autem inventore. Mollitia corrupti labore fuga beatae quo, facere perferendis provident sint praesentium nam sed error dicta hic adipisci officia voluptate quisquam! Temporibus delectus illum fugit consectetur ipsa repellat. Eligendi libero, illo accusamus itaque doloremque expedita non consequatur explicabo, esse nemo, provident natus? A, doloribus. Tenetur, neque aperiam qui voluptatem nisi dolore ea iusto. Praesentium, sit voluptate minima atque officia modi perferendis. Earum culpa sint labore atque voluptatem, quos provident cupiditate illo hic, beatae aut fugiat, error repellat commodi? Dignissimos iusto ipsa ipsam amet vel et nam at rem, harum officiis quo neque deserunt ullam laborum, cupiditate asperiores reprehenderit nobis voluptatibus architecto similique! Nulla sequi quo quisquam, a voluptas in culpa sapiente illo sint dolorem! Recusandae consequatur inventore facilis vitae enim alias quas exercitationem magni excepturi fugit? Eos perspiciatis ad harum laudantium odit quasi maxime! Vel esse recusandae tenetur quia porro neque similique ab iusto asperiores ipsa! Nostrum, quasi eos quia excepturi qui doloremque ex quas voluptates error nesciunt numquam, iste repudiandae repellendus corporis ut beatae voluptatum doloribus velit quisquam. Natus odit suscipit quia aspernatur, perspiciatis repellendus sit. Pariatur eveniet vero, nihil quaerat illum eum fuga dolorum fugiat veritatis consectetur officiis obcaecati distinctio ad, provident in voluptate. Nihil ullam repellendus dolores ex voluptatibus numquam voluptates! Asperiores tempora aspernatur labore quod laudantium sed, in necessitatibus enim minus nisi repellendus incidunt architecto reiciendis. Eos illum voluptatem architecto, rem, illo tempora omnis accusamus, odio velit atque est hic! Fuga fugit molestias maiores quis sed quisquam minima totam ab, repellat optio? Facilis, possimus fuga? Nemo, assumenda expedita laudantium necessitatibus ipsa enim dolores dignissimos fugit. Fugit, autem accusantium! Dolorum, quibusdam iste dignissimos ex, et eos tempore voluptate nisi sapiente magni ad numquam? Optio, quo modi inventore perspiciatis impedit obcaecati? Commodi mollitia magni deleniti cum cupiditate ipsam vitae?</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor sapiente, dolores harum reprehenderit vero voluptatibus, ducimus odit accusantium, ipsam qui expedita. Possimus porro culpa magni, blanditiis eius nostrum libero repellendus quas voluptatibus officia quae laboriosam, eligendi id? Dolor iste at odio corrupti consequuntur! Aliquam quod molestiae a esse ullam consequatur quibusdam ipsa reprehenderit velit ab quisquam adipisci nostrum accusantium in nulla non facilis voluptate, vel, minima illum odit? Aspernatur mollitia consequuntur praesentium reprehenderit inventore totam quis, culpa accusantium quia iste corrupti nostrum rerum impedit quos voluptatibus dicta accusamus illo, facilis natus at. Libero consequatur quaerat explicabo ut repellendus! Sunt illum pariatur numquam. Corporis sint ipsa blanditiis amet qui officia sequi vero aut? Corporis, minima exercitationem! Quasi sapiente quos, hic amet provident, eveniet rem enim, pariatur voluptates ducimus unde sint mollitia cum dolorem beatae vero dolor libero nam iure est. Voluptates laudantium nobis recusandae quos non, laborum a temporibus voluptatibus tenetur, minus fugit, asperiores consectetur maiores necessitatibus esse cupiditate quam! Eos vero earum similique, dolores sed alias labore adipisci veniam! Nihil quibusdam ipsum deserunt tempora fugit, provident et dolores velit cum voluptas molestiae ex? Tempora totam odit minima beatae, similique consectetur veniam, incidunt non in, saepe error quaerat quis porro voluptas quos dolore deserunt repudiandae delectus itaque reiciendis! Voluptate excepturi facere dolore inventore maiores possimus nostrum temporibus odit ratione, commodi illum sed doloribus blanditiis quasi quis similique aperiam cumque? Optio nihil magni odio repellat sunt nostrum dicta debitis quasi eos enim maxime impedit atque quod labore veniam cupiditate ratione quae facilis quia non consectetur suscipit, cumque eveniet! Quibusdam, dolore voluptate sit vitae deleniti, perspiciatis illum assumenda asperiores enim voluptatum aut aliquid voluptates architecto odit, nisi nostrum soluta. Necessitatibus non adipisci velit, numquam blanditiis incidunt nisi atque reprehenderit, dolorem molestiae assumenda quae natus sed enim obcaecati architecto culpa? Saepe iste minima distinctio et debitis totam placeat hic atque iure autem sapiente excepturi veniam, itaque vero, sit recusandae! Ab, neque quaerat? Optio expedita repellendus voluptas suscipit, saepe, minima voluptate repudiandae nihil veritatis quaerat voluptatem deserunt laboriosam sapiente rerum incidunt officiis quo unde est excepturi accusantium dicta error. Accusantium ipsam itaque vitae quae quisquam velit laboriosam, aut harum temporibus adipisci, pariatur aliquid? Optio eligendi vero, nostrum delectus, animi enim illum adipisci amet ratione aut vel tempore quis exercitationem dicta fugit. Rerum magni, quaerat incidunt quidem officia aut debitis dignissimos autem itaque est. Labore illum neque omnis laboriosam vitae tempora molestiae accusantium beatae at perspiciatis sunt, nisi inventore cum! Id suscipit omnis praesentium corporis, officia architecto porro nemo fugit ut placeat veritatis, cum, commodi ullam ea culpa delectus. Maiores ab, labore quibusdam quasi beatae quas porro temporibus molestiae, optio numquam dicta delectus eos, expedita quam tenetur pariatur quidem? Quod nulla ipsam voluptas cupiditate enim tempore quae veritatis, perspiciatis, dignissimos ab, doloribus deserunt nemo? Fuga, nihil. Veniam nihil eligendi quisquam, molestias delectus officiis veritatis exercitationem velit numquam cupiditate iure distinctio quis eaque commodi enim. Accusantium, debitis? Perferendis aspernatur at doloribus sunt natus, reiciendis alias error esse odit, tempora nostrum sequi. Iure sint, nam voluptates at minima est cumque nobis quidem, earum id autem consequuntur dolorum temporibus pariatur magni ab doloribus illo totam. Doloribus quaerat ad nam, dolorem cumque nisi quisquam, quis suscipit minus earum vero assumenda iure placeat modi dolor itaque reiciendis eum explicabo cupiditate mollitia beatae in unde? Quasi similique ullam nostrum quia dolorem voluptates. Sequi pariatur aliquid molestias, rem delectus maxime aperiam, blanditiis eaque ab est facilis impedit, possimus velit optio exercitationem voluptatum et totam aliquam quod similique. A ipsum fuga neque. Ipsum autem voluptatem placeat eligendi molestiae dolor. Cumque, velit sapiente pariatur reprehenderit culpa doloremque facere sed hic possimus? Dolore, aspernatur quia!</p>
+      </div>      
+    </div>
+
+    <div class="text-center">
+      <div class="spinner-grow text-success" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <span class="visually-hidden">Loading...</span>
+      </button>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Save</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body d-flex justify-content-between">
+      Successfully saved!
+      <button type="button" class="btn-close" data-bs-autohide="true" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on top">
+  Tooltip on top
+</button>
+
+
+<div class="container d-none border border-top-0 d-xl-block">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, numquam?</h5>
+          <hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<i class="bi bi-activity"></i>
+<i class="bi bi-window-plus"></i>
+<i class="bi bi-alarm"></i>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      //   return new bootstrap.Popover(popoverTriggerEl)
+      // })
+      // var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+      //   trigger: 'focus'
+      // })
+
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example2'
+      })
+
+      var toastTrigger = document.getElementById('liveToastBtn')
+      var toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+          var toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+      }
+
+
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  </body>
+
+</html>
