@@ -1,0 +1,67 @@
+.list ul {
+    counter-reset: list;
+    list-style: none;
+}
+
+.list ul li::before {
+    counter-increment: list;
+    content: " "counter(list)" ";
+    height: 45px;
+    width: 45px;
+    background-color: #000;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 50%;
+    counter-increment: list;
+    content: " "counter(list)" ";
+    /* height: 49px; */
+    /* width: 45px; */
+    background-color: #000;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 50px;
+    padding: 9px 13px;
+}
+
+.list ul li ul {
+    counter-reset: anotherlist;
+}
+
+.list ul li ul li::before {
+    counter-increment: anotherlist;
+    content: " "counter(list)"."counter(anotherlist)" ";
+}
+
+h1 {
+    color: red !important;
+}
+
+.two {
+    color: blue;
+}
+
+#three {
+    color: violet;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about .item {
+    background: cyan;
+    padding: 30px;
+    float: left;
+    width: calc(33.333% - 15px);
+    margin-right: 15px;
+}
+
+.about .item:nth-child(2) {
+    background-color: bisque;
+}
+
+.about .item:last-child {
+    margin-right: 0;
+}

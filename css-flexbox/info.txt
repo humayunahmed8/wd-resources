@@ -1,0 +1,52 @@
+## A Complete Guide to Flexbox
+==============================
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+##flex-grow calculation
+========================
+https://www.samanthaming.com/flexbox30/22-flex-grow-calculation/
+
+
+##flex-shrink calculation
+========================
+https://www.samanthaming.com/flexbox30/24-flex-shrink-calculation/
+
+
+##flex-grow formula
+====================
+free space = parent width - total children widths
+free space = 700 - 300 = 400
+
+total flex grow = 1 + 2 + 1 = 4
+
+new width = ( (flex grow / total flex grow) x free space) + width
+new width = ( (1 / 4) * 400 ) + 100
+new width = ( (2 / 4) * 400 ) + 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BODMAS -
+
+B-Brackets, 
+O-Orders (powers/indices or roots), 
+D-Division, 
+M-Multiplication, 
+A-Addition, 
+S-Subtraction
+

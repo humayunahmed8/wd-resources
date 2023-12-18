@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox | Layout Module</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+            flex-start 
+            flex-end 
+            center
+            space-between
+            space-around 
+            space-evenly 
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .flex-container .item.blue {
+            height: 500px;
+        }*/
+
+        .flex-container {
+            height: 600px;
+        }
+        .flex-container .item {
+            /* width: 100px; */
+            height: 100px;
+            /* flex: flex-grow flex-shrink flex-basis; */
+            flex: 1 1 33.3333%;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* row, column, row-reverse, column-reverse */
+            /* justify-content: space-evenly; */ /*flex-start, flex-end, center, space-around, space-between, space-evenly*/
+        }
+        .flex-container .item.red {
+            /* flex-basis: 300px;
+            flex-shrink: 0; */
+            /* align-self: flex-end; */
+        }
+        .flex-container .item.green {
+            /* flex-basis: 600px;
+            flex-shrink: 0; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="item red">1</div>
+            <div class="item green">2</div>
+            <div class="item violet">3</div>
+            <!-- <div class="item red">4</div>
+            <div class="item blue">5</div>
+            <div class="item green">6</div>
+            <div class="item blue">7</div> -->
+            <!-- <div class="item red">8</div>
+            <div class="item green">9</div>
+            <div class="item blue">10</div>
+            <div class="item red">11</div>
+            <div class="item green">12</div>
+            <div class="item blue">13</div>
+        </div>
+    </div>
+</body>
+</html>

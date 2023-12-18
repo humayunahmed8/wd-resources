@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: cyan;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+/* Button One Hover Effect */
+.buttonOne::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: blueviolet;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+.button:hover {
+    color: #fff;
+}
+.buttonOne:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Button Two Hover Effect */
+
+.buttonTwo::after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: blueviolet;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    border-radius: 0 50% 0 0;
+    opacity: 0;
+}
+
+.buttonTwo:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    opacity: 1;
+}
+
+/* Button Three Hover Effect */
+
+.buttonThree::after {
+    content: "";
+    height: 80px;
+    width: 50%;
+    background-color: blueviolet;
+    left: -26px;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    transform: rotate(50deg);
+    opacity: 0;
+}
+
+.buttonThree:hover::after {
+    transform: rotate(0deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+}
+
+/* Button Four Hover Effect */
+
+.buttonFour::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    transition-duration: 0.3s; 
+    transition-delay: 0.1s;
+    border-radius: 0 50% 50% 0;
+}
+
+.buttonFour:hover::before {
+    width: 50%;
+    border-radius: 0;
+}
+
+.buttonFour::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: blueviolet;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+    border-radius: 50% 0 0 50%;
+}
+
+.buttonFour:hover::after {
+    width: 50%;
+    border-radius: 0;
+}

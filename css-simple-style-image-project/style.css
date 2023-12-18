@@ -1,0 +1,87 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrapper img {
+    width: calc(33.33% - 20px);
+    float: left;
+    margin: 10px;
+}
+
+.image-wrapper img:nth-child(1) {
+    filter: blur(5px);
+    border-radius: 5px;
+}
+.image-wrapper img:nth-child(2) {
+    filter: contrast(10%);
+    border-radius: 50%;
+    height: 429px;
+    width: 429px;
+    object-fit: cover; /* cover, contain, fill, none, scale-down */
+    object-position: left top; /* left, right, center, bottom */
+}
+.image-wrapper img:nth-child(3) {
+    filter: grayscale(100%);
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+.image-wrapper img:nth-child(4) {
+    filter: hue-rotate(180deg);
+}
+.image-wrapper img:nth-child(5) {
+    filter: invert(100%);
+}
+.image-wrapper img:nth-child(6) {
+    filter: opacity(50%);
+}
+.image-wrapper img:nth-child(7) {
+    filter: sepia(100%);
+}
+.image-wrapper img:nth-child(8) {
+    filter: saturate(7);
+}
+.image-wrapper img:nth-child(9) {
+    filter:drop-shadow(8px 8px 10px green);
+}
+
+/* image center */
+.image-center {
+    margin-top: 30px;
+}
+.image-center img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Image caption */
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 400px;
+    margin-top: 30px;
+}
+  
+.caption {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.polaroid img {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.polaroid:hover img  {
+    opacity: 1;
+}

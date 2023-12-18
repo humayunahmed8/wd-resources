@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+
+        ul {
+            list-style: none;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        .pagination a {text-decoration: none;color: #000;font-size: 16px;padding: 8px 15px;display: inline-block;border: 1px solid #ddd;transition: 0.3s; display: block;}
+
+        .pagination a:hover {background-color: #ddd;}
+
+        .pagination  li:first-child  a{border-radius: 5px 0 0 5px;}
+
+        .pagination li:last-child a{border-radius: 0 5px 5px 0;}
+    </style>
+</head>
+<body>
+    <ul class="pagination">
+        <li>
+            <a href="index.html">&laquo;</a>
+        </li>
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>    
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+        <li>
+            <a href="index.html">&raquo;</a>
+        </li>
+    </ul>
+</body>
+</html>

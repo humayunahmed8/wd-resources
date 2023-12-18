@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #333333;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #04AA6D;
+}
+
+header nav ul li a.active {
+    background: #04AA6D;
+}
+
+/* Dropdown Menu */
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li ul {
+    position: absolute;
+    background-color: #333;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    top: 200px;
+    transition: 0.3s;
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+header nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 58px;
+}
+
+/* Form */
+form {
+    background-color: #ddd;
+    padding: 50px 40px;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input[type="submit"] {
+    background-color: #04AA6D;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+form label, form input {
+    font-size: 16px;
+}
+
+form input[type="text"] {
+    box-shadow: inset 0 1px 3px #ddd;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 5px solid red;
+            border-radius: 50%;
+            line-height: 100px;
+            text-align: center;
+            background-color: yellow;
+            margin-bottom: 30px;
+        }
+
+        /* CSS Border Image Property */
+        .boxTwo {
+            width: 80%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background: #fff3d4;
+            color: #000;
+            border: 30px solid;
+            font-size: 1.2em;
+            /* border-image: border-image-source border-image-slice / border-image-width / border-image-outset border-image-repeat; */
+            /* border-image: url(border-2.png) 30 fill / 1 / 1 round; */
+            border-image-source: url(border-2.png);
+            border-image-slice: 30 fill;
+            border-image-width: 1;
+            border-image-outset: 1;
+            border-image-repeat: round;
+        }
+
+        /* CSS Background Clip Content Box */
+        .content-box {
+            background-color: cyan;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px dotted red;
+            background-clip: content-box;
+            margin-bottom: 30px;
+        }
+
+        /* CSS Background Clip Border Box */
+        .border-box {
+            /* background-color: rgba(1 1 1 / 0); */
+            /* background-color: hsla(240,100%,0%,0.5); */
+            background: rgb(202,101,214);
+            background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px dotted red;
+            margin-bottom: 30px;
+            background-clip: border-box;
+        }
+
+         /* CSS Background Clip Padding Box */
+         .padding-box {
+            background-color: cyan;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px dotted red;
+            margin-bottom: 30px;
+            background-clip: padding-box;
+        }
+
+         /* CSS Background Origin Content Box */
+         .origin-content-box {
+            background-image: url(origin-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px solid red;
+            margin-bottom: 30px;
+            background-origin: content-box;
+        }
+
+         /* CSS Background Origin Border Box */
+         .origin-border-box {
+            background-image: url(origin-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px solid rgb(255 0 0 / 13%);
+            margin-bottom: 30px;
+            background-origin: border-box;
+        }
+
+         /* CSS Background Origin Padding Box */
+         .origin-padding-box {
+            background-image: url(origin-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px solid rgb(255 0 0 / 13%);
+            margin-bottom: 30px;
+            background-origin: padding-box;
+        }
+
+        .origin-text-box {
+            background-image: url(origin-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            text-align: center;
+            padding: 100px;
+            margin: 30px;
+            border: 10px solid rgb(255 0 0 / 13%);
+            margin-bottom: 30px;
+            -webkit-background-clip: text;
+                    background-clip: text;
+            color: transparent;
+        }
+
+        .origin-text-box p {
+            font-size: 80px;
+        }
+
+        .origin-text-box.shadow{
+            -webkit-background-clip: inherit;
+                    background-clip: inherit;
+            background-image: none;
+            color: red;
+            background-color: cyan;
+            margin: 100px;
+            box-shadow: inset 4px 4px 70px 50px rgb(0 0 0 / 11%);
+            -webkit-box-shadow: inset 4px 4px 70px 50px rgb(0 0 0 / 11%);
+            -moz-box-shadow: inset 4px 4px 70px 50px rgb(0 0 0 / 11%);
+            -o-box-shadow: inset 4px 4px 70px 50px rgb(0 0 0 / 11%);
+        }
+
+        .multiple-bg {
+            padding: 100px;
+            margin: 30px;
+            border: 10px solid red;
+            margin-bottom: 30px;
+            /* background: url(flower.gif) bottom right no-repeat, 
+                        url(flower.gif) bottom left no-repeat, 
+                        url(paper.gif) top left repeat; */
+            background-image: url(firefox.png), url(bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: bottom right, left bottom, right;
+        }
+
+        p.test2 {
+            white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    padding: 15px;
+    text-overflow: ellipsis;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        Border Radius
+    </div>
+    <div class="boxTwo">
+        Border Image
+    </div> -->
+
+    <div class="content-box">
+        <p>Content Goes Here.</p>
+    </div>
+
+    <div class="border-box">
+        <p>Content Goes Here.</p>
+    </div>
+
+    <div class="padding-box">
+        <p>Content Goes Here.</p>
+    </div>
+
+
+    <div class="origin-content-box">
+        <p>Background Origin Content Box</p>
+    </div>
+
+    <div class="origin-border-box">
+        <p>Background Origin Border Box</p>
+    </div>
+
+    <div class="origin-padding-box">
+        <p>Background Origin Padding Box</p>
+    </div>
+
+    <div class="origin-text-box">
+        <p>Background Origin Padding Box</p>
+    </div>
+
+    <div class="multiple-bg">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos, alias corrupti expedita sapiente omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eos, alias corrupti expedita sapiente omnis.</p>
+    </div>
+
+    <div class="oval"></div>
+    
+    <div class="origin-text-box shadow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, obcaecati!</p>
+    </div>
+
+    <p class="test2">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shizuru&display=swap");
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+src: url("fonts/FiraCodeMedium.eot");
+src: url("fonts/FiraCodeMedium.eot") format("embedded-opentype"),
+url("fonts/FiraCodeMedium.woff2") format("woff2"),
+url("fonts/FiraCodeMedium.woff") format("woff"),
+url("fonts/FiraCodeMedium.ttf") format("truetype"),
+url("fonts/FiraCodeMedium.svg#FiraCodeMedium") format("svg");
+}
+
+body {
+  font-family: "FiraCodeMedium";
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 auto;
+  border: 3px solid green;
+  outline: 10px dashed violet;
+}
+
+a {
+  /* text-decoration: line-through;
+  text-decoration: underline;
+  text-decoration: overline; */
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 15px;
+  text-indent: 150px;
+  /* letter-spacing: 5px; */
+  /* word-spacing: 20px; */
+  line-height: 1.4;
+  white-space: wrap;
+  /* white-space: nowrap; */
+  font-weight: 900;
+}
+
+h4 {
+  text-shadow: 2px 2px 3px red;
+  font-family: "Shizuru", cursive;
+}
+
+.boxes {
+  background-color: aqua;
+}
+
+ul {
+  /* list-style-type: upper-roman; */
+  /* list-style-position: outside; */
+  /* list-style-image: url(img/favicon.png); */
+  /* list-style: upper-roman outside url(img/favicon.png); */
+}
+
+a.btn {
+  background-color: cyan;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 3px solid red;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #6fa05f;
+}
+
+.unorderd-list ul {
+  /* list-style-type: decimal;
+  list-style-image: url('assets/img/list.png');
+  list-style-position: outside; */
+  list-style: decimal url('assets/img/list.png') outside;
+
+}
+
+.tables {
+  overflow-x: auto;
+}
+
+.tables table {
+  border: 1px solid #ddd;
+  width: 800px;
+  border-collapse: collapse;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.tables table th, .tables table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.tables table tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.tables table thead tr:nth-child(1) {
+  background-color: #6fa05f;
+  color: #fff;
+}
+
+.element h1 {
+  display: inline-block;
+}
+
+.element {
+  max-width : 800px;
+  border: 2px solid red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumbs</title>
+    <style>
+        * {}
+
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+
+        ul.breadcrumbs {display: flex;list-style: none;justify-content: center;margin-top: 150px;}
+
+        ul.breadcrumbs li {margin-right: 30px;position: relative;display: inline-block;}
+
+        ul.breadcrumbs li:before {content: "/";position: absolute;right: -15px;top: 0;}
+
+        ul.breadcrumbs li a {/* padding: 5px 10px; */display: block;text-decoration: none;color: cadetblue;}
+
+        ul.breadcrumbs li:last-child:before {content: "";}
+
+        ul.breadcrumbs li.active {opacity: 0.5;}
+    </style>
+</head>
+<body>
+
+    <h3>
+        Home Page
+    </h3>
+
+    <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pagination.html">Pagination</a></li>
+    </ul>
+</body>
+</html>

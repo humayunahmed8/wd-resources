@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: coral;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.box h2 {
+    font-size: 52px;
+}
+
+/* Print */
+@media print {
+    .box h2 {
+        color: yellowgreen;
+    }
+    .box {
+        border: 1px solid red;
+    }
+}
+
+/* Fixed Width */
+@media only screen and (min-width:575px) and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Extra Small (Mobile) - xs */
+@media screen and (min-width: 480px ) {
+    .box h2 {
+        font-size: 24px;
+    }
+} /* 480 - 574 */
+
+/* Small (iPads, Tablets) - sm */
+@media screen and (min-width: 576px) {
+    .box h2 {
+        font-size: 24px;
+    }
+} /* 576 - 767 */
+
+/* Medium (Laptop) - md */
+@media screen and (min-width: 768px) {
+    .box h2 {
+        font-size: 32px;
+    }
+} /* 768 - 991 */
+
+/* Large (Desktop) - lg  */
+@media screen and (min-width: 992px) {
+    .box h2 {
+        font-size: 40px;
+    }
+} /* 992 - 1199 */
+
+
+/* Extra Large (TV Screen) - xl  */
+@media screen and (min-width: 1200px) {
+    .box h2 {
+        font-size: 58px;
+        color: #fff;
+    }
+} /* 1200 - 1399 */
+
+
+/* Extra extra large (TV Screen) - xxl */
+@media screen and (min-width: 1400px) {
+    .box h2 {
+        font-size: 60px;
+    }
+} /* 1400 - .... */

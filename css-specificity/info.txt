@@ -1,0 +1,27 @@
+!important - 10000
+Inline CSS - 1000
+Count the number of IDs (a) - 100
+Count the number of Classes, attributes, Pseudo classes (b) - 10
+Count the number of Elements and Pesudo elements (c) - 1
+Universal selector (*) specificity - 0
+
+
+a = number of id,
+b = number of classes, pseudo-classes, attributes 
+c = number of elements, pseudo elements
+
+
+
+https://specificity.keegan.st
+https://www.w3.org/TR/selectors-3/#specificity
+
+
+*               /* a=0 b=0 c=0 -> specificity =   0 */
+LI              /* a=0 b=0 c=1 -> specificity =   1 */
+UL LI           /* a=0 b=0 c=2 -> specificity =   2 */
+UL OL+LI        /* a=0 b=0 c=3 -> specificity =   3 */
+H1 + *[REL=up]  /* a=0 b=1 c=1 -> specificity =  11 */
+UL OL LI.red    /* a=0 b=1 c=3 -> specificity =  13 */
+LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
+#example_id           /* a=1 b=0 c=0 -> specificity = 100 */
+#example_id:not(FOO)   /* a=1 b=0 c=1 -> specificity = 101 */

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --primary-color : violet;
+    --text-color : blue;
+    --primary-font : 'Montserrat', sans-serif;
+    --heading-font-size : 80px;
+}
+
+@media screen and (max-width: 992px) {
+    :root {
+        --heading-font-size : 40px;
+    }  
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: var(--heading-font-size);
+}
+h2 {
+    color: var(--text-color);
+}
+h3 {
+    color: var(--primary-color);
+    font-size: var(--heading-font-size);
+}
